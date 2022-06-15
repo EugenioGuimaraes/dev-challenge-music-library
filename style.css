@@ -1,0 +1,92 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, var, ol, ul, li, form, label,article, aside, figure, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    font-family: sans-serif;
+	vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+body div{
+    background-color: teal;
+    border: solid 1px tomato;
+}
+
+
+
+.container{
+    /* margin: 0 auto; */
+    width: 1200px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5% repeat(3, 1fr);
+    gap: 50px 10px;
+    background-color: grey;
+}
+
+.cabecalho{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.principal{
+    display: flex;
+    flex-flow: column wrap;
+    border-color: #000;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.cards_grandes{
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    width: 100%;
+    height: 30%;
+    background-color: yellowgreen;
+}
+
+.cards_pequenos{
+    margin-top: 7%;
+    height: 60%;
+    display: flex;
+    border: solid 10px blue;
+}
+
+.views{
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.tracks{
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.perfil{
+    margin-right: 100px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
